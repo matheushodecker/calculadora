@@ -2,6 +2,8 @@ let currentInput = '';
 let currentOperator = '';
 let displayElement = document.getElementById('display');
 let historyElement = document.getElementById('history');
+// let btn7 = document.getElementById("btn7");
+// btn7.addEventListener("click", add_numero(7));
 
 function limpar(){
     currentInput = '';
@@ -13,7 +15,7 @@ function add_numero(numero){
     currentInput += numero;
     updateDisplay();
 }
-function add_operator(operator){
+function add_operador(operator){
     if(currentInput !== ''){    
         if(currentOperator !== ''){
             calcular();
@@ -39,4 +41,5 @@ function total(){
 function updateDisplay() {
     displayElement.value = currentInput;
     historyElement.innerText = currentInput;
-}   
+}
+
