@@ -42,4 +42,3 @@ function updateDisplay() {
     displayElement.value = currentInput;
     historyElement.innerText = currentInput;
 }
-
